@@ -1,5 +1,7 @@
 ## [Quick short link shortner for AILA](https://link.aila.ngo)
 
+[![Deploy Eleventy to XMIT](https://github.com/adamdjbrett/link.aila.ngo/actions/workflows/xmit-deploy.yml/badge.svg)](https://github.com/adamdjbrett/link.aila.ngo/actions/workflows/xmit-deploy.yml)
+
 ## This solution
 
 This relies on [Netlify's](https://www.netlify.com)
