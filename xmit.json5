@@ -1,0 +1,63 @@
+{
+  redirects: [
+    // Social Media Links
+    { from: '^/fb$', to: 'https://twitter.com/AILAnyc' },
+    { from: '^/tw$', to: 'https://www.facebook.com/americanindianlawalliance' },
+    { from: '^/fb-dod$', to: 'https://www.facebook.com/Doctrine-of-Discovery-115693763603203' },
+    { from: '^/fb-ivi$', to: 'https://www.facebook.com/indigenousvalues' },
+    { from: '^/tw-ivi$', to: 'https://twitter.com/indigenousVI' },
+    { from: '^/ig-ivi$', to: 'https://www.instagram.com/indigenousvalues' },
+    { from: '^/yt$', to: 'https://www.youtube.com/c/IndigenousValuesInitiative' },
+
+    // Main Sites
+    { from: '^/dod$', to: 'https://doctrineofdiscovery.org/' },
+    { from: '^/ivi$', to: 'http://indigenousvalues.org/' },
+
+    // Mother Earth's Pandemic
+    { from: '^/mep$', to: 'https://doctrineofdiscovery.org/event/education/mother-earths-pandemic/' },
+    { from: '^/mep-vids$', to: 'https://doctrineofdiscovery.org/resources/event/mother-earths-pandemic-session-videos/' },
+    { from: '^/mep-res$', to: 'https://doctrineofdiscovery.org/law/resources/event/mother-earths-pandemic-resources/' },
+
+    // Petitions & Campaigns
+    { from: '^/remove-monument$', to: 'https://www.change.org/p/mayor-ben-walsh-remove-racist-monument-in-syracuse' },
+    { from: '^/save-lake$', to: 'https://www.change.org/p/andrew-m-cuomo-reclaim-and-restore-onondaga-lake-return-to-onondaga-nation' },
+    { from: '^/irq-nats$', to: 'https://www.change.org/p/international-world-games-association-iwga-support-the-iroquois-nationals-lacrosse-team-inclusion-2022-world-games-birmingham-usa' },
+
+    // News & Articles
+    { from: '^/haud-inf$', to: 'https://www.syracuse.com/opinion/2020/08/haudenosaunee-women-inspired-womens-suffrage-movement-commentary.html' },
+    { from: '^/history-forgotten$', to: 'https://www.nydailynews.com/opinion/ny-oped-historys-forgotten-suffrage-heroes-20200830-eb252iyl5vdqvfv4awkxjcaexe-story.html' },
+    { from: '^/nyt-remove$', to: 'https://www.nytimes.com/2020/06/27/opinion/letters/statues-theodore-roosevelt-race.html' },
+    { from: '^/cap-pressroom$', to: 'https://www.wcny.org/july-2-2020-cuomos-resistance-on-columbus-statues-offends-nys-indigenous-community/' },
+    { from: '^/central-park$', to: 'https://www.nydailynews.com/news/politics/ny-cuomo-columbus-statue-central-park-renewed-calls-20200611-xoo2gonqgbcqnlujtisqc4o3ze-story.html' },
+    { from: '^/usatoday$', to: 'https://www.usatoday.com/story/news/politics/2020/06/11/andrew-cuomo-supports-christopher-columbus-statue-manhattan/5344917002/' },
+    { from: '^/indig-sci$', to: 'https://www.syracuse.com/opinion/2020/02/indigenous-peoples-can-guide-scientists-in-fight-against-climate-change-commentary.html' },
+    { from: '^/irq-ire$', to: 'https://buffalonews.com/opinion/columnists/column-a-selfless-lacrosse-gesture-allows-the-iroquois-to-take-on-the-world/article_103ed996-f901-11ea-b447-5b151f42bb39.html?fbclid=IwAR0jec8UlZrQjd-jbdnadLSorrfkzxzUYJ-Jxu9mFcY6jXZIko0D8HjfY-U' },
+
+    // AILA Content
+    { from: '^/patagonia-store$', to: 'https://aila.ngo/patagonia-storefront-in-support-of-onondaga-lake/' },
+    { from: '^/giwc-2020$', to: 'https://aila.ngo/the-2020-global-indigenous-womens-caucus/' },
+    { from: '^/matilda-effect$', to: 'https://aila.ngo/haudenosaunee-womens-influence-on-the-womens-rights-movement/' },
+    { from: '^/prelim$', to: 'https://aila.ngo/wp-content/uploads/2010/09/DOD5.pdf' },
+
+    // Indigenous Values Content
+    { from: '^/mayor-ltr$', to: 'https://indigenousvalues.org/remove-columbus-statue-in-syracuse/' },
+
+    // Video Content
+    { from: '^/irq-nats-betty$', to: 'https://youtu.be/PJoZ1hLaTpY' },
+    { from: '^/domination-code$', to: 'https://vimeo.com/ondemand/dominationcode' },
+
+    // Regional Google Docs
+    { from: '^/africa$', to: 'https://docs.google.com/document/d/1VbA1XuTUA-W5-mmrfuBO55VYEEt-5t1J4axB_oSNSB8/edit?usp=sharing' },
+    { from: '^/asia$', to: 'https://docs.google.com/document/d/1Eel4xgzjSauWbQZt5BYBW1dZOr7VXalmTPtZAaj5Zts/edit?usp=sharing' },
+    { from: '^/south$', to: 'https://docs.google.com/document/d/1YdmYleeJik14M9Rf2FXXdMBp7Ub2cQY_lLTUuPW3I84/edit?usp=sharing' },
+    { from: '^/europe$', to: 'https://docs.google.com/document/d/1SJk4trpjGEMnVIF2DY9nelPWVarSTNFx350_z8y0ILA/edit?usp=sharing' },
+    { from: '^/north$', to: 'https://docs.google.com/document/d/1sM-2LCawbn7J_fb6sfs7xVCKfUSGaTTw-TtqofAD1Ic/edit?usp=sharing' },
+    { from: '^/pacific$', to: 'https://docs.google.com/document/d/15gVkDwPJsooNGJQsCoGNNuJSp8f6dQWSpR1yANSCxEo/edit?usp=sharing' },
+
+    // Events
+    { from: '^/gipc$', to: 'https://us06web.zoom.us/webinar/register/WN_Rr8mruBQRZS1HqRqxj5GKQ' },
+
+    // Fallback catch-all
+    { from: '^/(.*)$', to: 'https://aila.ngo' },
+  ],
+}
