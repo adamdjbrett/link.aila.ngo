@@ -1,4 +1,4 @@
-name: Deploy Eleventy to XMIT
+name: Deploy Redirects to XMIT
 
 on:
   push:
@@ -27,24 +27,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js (for XMIT CLI)
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Eleventy site
-        run: npm run build
-
-      - name: Verify build output
+      - name: Prepare deployment directory
         run: |
-          if [ ! -d _site ]; then
-            echo "_site directory missing after build" >&2
-            exit 1
+          mkdir -p _site
+          # Copy redirect config files
+          if [ -f xmit.json5 ]; then
+            cp xmit.json5 _site/
+          elif [ -f xmit.json ]; then
+            cp xmit.json _site/
+          elif [ -f xmit.toml ]; then
+            cp xmit.toml _site/
           fi
-          ls -1 _site | head -n 20
+          # Copy _redirects if exists
+          if [ -f _redirects ]; then
+            cp _redirects _site/
+          fi
+          # Create a simple index.html if none exists
+          if [ ! -f _site/index.html ]; then
+            echo '<html><head><meta http-equiv="refresh" content="0;url=https://aila.ngo"></head><body>Redirecting...</body></html>' > _site/index.html
+          fi
+          ls -la _site
 
       - name: Deploy to XMIT (CLI)
         env:
@@ -70,13 +77,3 @@ jobs:
         run: |
           echo "Deployment attempt finished for $XMIT_SITE";
           echo "Visit: https://$XMIT_SITE";
-
-    # Uncomment below for an alternative raw API upload if you have endpoint details
-    # steps:
-    #   - name: Deploy via API (curl)
-    #     run: |
-    #       tar -czf site.tar.gz -C _site .
-    #       curl -f -X POST \
-    #         -H "Authorization: Bearer $XMIT_KEY" \
-    #         -F "bundle=@site.tar.gz" \
-    #         https://api.xmit.example/deploy?site=$XMIT_SITE
