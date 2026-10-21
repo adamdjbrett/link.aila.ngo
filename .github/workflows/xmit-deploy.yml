@@ -47,6 +47,9 @@ jobs:
           if [ -f _redirects ]; then
             cp _redirects _site/
           fi
+          # Copy hosted pages and images (real files take priority over the catch-all redirect)
+          cp social.html _site/
+          cp -R assets _site/
           # Create a simple index.html if none exists
           if [ ! -f _site/index.html ]; then
             echo '<html><head><meta http-equiv="refresh" content="0;url=https://aila.ngo"></head><body>Redirecting...</body></html>' > _site/index.html
