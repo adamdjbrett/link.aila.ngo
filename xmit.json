@@ -1,8 +1,8 @@
 {
   redirects: [
     // Social Media Links
-    { from: '^/fb$', to: 'https://twitter.com/AILAnyc' },
-    { from: '^/tw$', to: 'https://www.facebook.com/americanindianlawalliance' },
+    { from: '^/fb$', to: 'https://www.facebook.com/americanindianlawalliance' },
+    { from: '^/tw$', to: 'https://twitter.com/AILAnyc' },
     { from: '^/fb-dod$', to: 'https://www.facebook.com/Doctrine-of-Discovery-115693763603203' },
     { from: '^/fb-ivi$', to: 'https://www.facebook.com/indigenousvalues' },
     { from: '^/tw-ivi$', to: 'https://twitter.com/indigenousVI' },
